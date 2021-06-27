@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+nav {
+  min-height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(240, 237, 237);
+  position: fixed;
+  z-index: 100;
+}
+
+#logo {
+  height: 28px;
+  width: 110px;
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.fa-search {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.nav-item {
+  list-style: none;
+  color: rgb(92, 92, 92);
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.burger {
+  display: none;
+}
+
+.burger > div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+.burger:focus {
+  outline: none;
+}
+
+.links {
+  text-decoration: none;
+  margin: 0 10px;
+  color: rgb(92, 92, 92);
+}
+
+.links:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* bold-black class  */
+.bold {
+  font-weight: bold;
+}
+
+/* main-container */
+.hero {
+  /* height: 92vh; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.left-main {
+  height: 100%;
+  width: 70vw;
+}
+
+.heading {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.left-main > h2 {
+  font-size: 1.6rem;
+}
+
+/* card-container  */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.right-main {
+  height: 100%;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* card  */
+.card {
+  height: 360px;
+  width: 340px;
+  margin: 10px;
+  box-shadow: 0px 0px 8px 1px gray;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(104%);
+}
+
+.img-holder {
+  position: relative;
+  height: 70%;
+  width: 100%;
+}
+
+/* quiz-image  */
+.quiz-img {
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.quiz-small {
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  text-align: center;
+  background-color: rgba(3, 124, 3, 0.627);
+  color: white;
+  right: 3%;
+  top: 2%;
+  z-index: 20;
+}
+
+/* content  */
+.content-holder {
+  display: grid;
+  place-items: center;
+}
+
+.content-holder > h5 {
+  font-size: 16px;
+}
+
+.content-holder > p {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.list-div {
+  height: 200px;
+  width: 300px;
+  position: relative;
+  margin: 100px 30px;
+  box-shadow: 0px 0px 8px -2px black;
+}
+
+.divcls {
+  width: 100%;
+  height: 20%;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+  height: 40px;
+  font-size: 1.4rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.gray {
+  background-color: rgba(209, 208, 208, 0.623);
+}
+
+.category-div {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  box-shadow: 0px 0px 8px -2px black;
+}
+
+.topquiz-div {
+  position: relative;
+  height: 75px;
+  display: flex;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.img-cont {
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+
+.img-cont > img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.p-cont {
+  height: 100%;
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+
+#btn {
+  padding: 10px;
+  height: 60px;
+  margin: 20px;
+  width: 140px;
+  background-color: rgba(0, 128, 0, 0.726);
+  color: white;
+  font-size: 18px;
+  border: none;
+  font-weight: 600;
+}
+
+/* quiz.html css  */
+#p1 {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.main-quiz {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(209, 208, 208, 0.623);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  height: 60vh;
+  width: 50vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > p {
+  font-size: 1rem;
+  padding: 40px;
+}
+
+#quiz-btn {
+  width: 100px;
+  height: 50px;
+  background-color: rgba(0, 128, 0, 0.568);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+#quiz-btn:hover {
+  background-color: green;
+}
+
+.info {
+  height: 60vh;
+  width: 50vw;
+  margin: 40px 0;
+}
+
+.info > p {
+  padding: 30px;
+}
+
+/* media queries  */
+
+@media screen and (min-width: 769px) and (max-width: 1160px) {
+  .right-main {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: fixed;
+    z-index: 300;
+  }
+  .navbar {
+    position: absolute;
+    display: none;
+    width: 100vh;
+    flex-direction: column;
+    transition: all 0.5s;
+    align-items: center;
+    z-index: 200;
+    height: 92vh;
+    top: 8vh;
+    justify-content: space-evenly;
+    background-color: rgba(192, 192, 192, 0.979);
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    height: 300px;
+    width: 300px;
+  }
+  .img-holder {
+    position: relative;
+    height: 60%;
+    width: 100%;
+  }
+
+  .content-holder > h5 {
+    font-size: 14px;
+  }
+
+  .content-holder > p {
+    font-size: 12px;
+    padding: 15px;
+  }
+  .heading {
+    display: grid;
+    place-items: center;
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+
+.navbar.show {
+  display: flex;
+}
