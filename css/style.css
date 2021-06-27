@@ -256,7 +256,7 @@ nav {
 #p1 {
   text-align: center;
   padding: 10px;
-  margin: 10px;
+  margin: 6%;
 }
 
 .main-quiz {
@@ -379,6 +379,31 @@ nav {
     place-items: center;
     margin-top: 60px;
     text-align: center;
+  }
+
+  .container {
+    height: 75vh;
+    width: 80%;
+  }
+
+  .container > p {
+    font-size: 14px;
+    padding: 30px;
+  }
+
+  .info {
+    height: auto;
+    width: 50vw;
+    margin: 20px 0;
+  }
+
+  .info > p {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #p1 {
+    margin-top: 50px;
   }
 }
 
